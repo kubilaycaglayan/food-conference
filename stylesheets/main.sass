@@ -1,0 +1,30 @@
+@import "sanitize.css"
+@import "mediaqueries.css"
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900&display=swap')
+
+$cbl: #272a31
+$crd: #ec5242
+$cgy: #d3d3d3
+
+=flato($boldness: normal)
+    font-family: 'Lato', sans-serif
+    font-weight: $boldness
+
+=fgoose($boldness: normal)
+    font-family: 'Montserrat', sans-serif
+    font-weight: $boldness
+
+li
+    list-style: none
+
+a
+    text-decoration: none
+    
+
+header
+    background: $cbl
+    color: white
+    font-size: 25px
+    a
+        color: white
