@@ -1,11 +1,6 @@
-@import "sanitize.css"
-@import "mediaqueries.css"
+@import "./variables"
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap')
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900&display=swap')
-
-$cbl: #272a31
-$crd: #ec5242
-$cgy: #d3d3d3
 
 =flato($boldness: normal)
     font-family: 'Lato', sans-serif
@@ -15,10 +10,15 @@ $cgy: #d3d3d3
     font-family: 'Montserrat', sans-serif
     font-weight: $boldness
 
-=flexit()
+=flexit($jc: center)
     display: flex
-    justify-content: center
+    justify-content: $jc
     align-items: center
+
+main 
+    +flato()
+    color: #2e2e2e
+    min-width: 320px
 
 ul 
     +flexit()
@@ -32,14 +32,22 @@ a
     &:hover
         font-weight: 900
         color: $crd
+        text-decoration: none
+        cursor: pointer
 
 header
-    background: $cbl
-    color: white
-    font-size: 25px
-    +flexit()
+    .d-md-block
+        background: $cbl
+        color: white
+        font-size: 25px
+        +flexit()
     a
         color: white
+    .d-md-none            
+        .fa-bars
+            color: $cbl
+            margin: 15px 0 0 20px
+            font-size: 30px
 
 .bgimg
     background-image: url(https://www.elegantthemes.com/blog/wp-content/uploads/2013/09/bg-3-full.jpg)
@@ -49,4 +57,127 @@ header
     right: 0
     bottom: 0
     z-index: -1
-    opacity: 0.4
+    opacity: 0.8
+
+.welcome
+    margin: 3rem auto 0 auto
+    width: 90%
+    h4 
+        color: $crd
+    h1 
+        font-size: 50px
+        background: $bg1
+        -webkit-text-fill-color: transparent
+        -webkit-background-clip: text
+        +fgoose(900)
+    .summary-event
+        background-color: $cgy2
+        padding: 15px
+        border: 2px white solid
+        border-radius: 3px
+        +flato($boldness: 500)
+
+.main-program
+    background-color: $bg2
+    padding-bottom: 25px
+    color: white
+    h1
+        text-align: center
+        padding-top: 35px
+    .nested-section
+        +flexit()
+        width: 80%
+        margin: 0 auto
+        @media ( max-width: 768px)
+            display: block
+            width: 100%
+    article
+        background-color: #ffffff1a 
+        color: white
+        text-align: center
+        padding: 15px
+        margin: 0 5px
+        .fa-user-friends
+            font-size: 55px
+        h3 
+            color: $orange
+            font-weight: 700
+        @media (max-width: 768px)
+            height: 100px
+            width: 95%
+            margin: 15px auto
+            +flexit(space-around)
+            h3 
+                font-size: 18px
+            p 
+                width: 50%
+                text-align: left
+                padding-top: 3px
+                font-size: 10px
+                padding-left: 5px
+            .fa-user-friends
+                font-size: 40px
+
+.featured-speakers
+    text-align: center
+    h1 
+        padding-top: 10px
+        font-size: 30px 
+        font-weight: 500
+    .media 
+        padding: 10px
+        a 
+            width: 100px
+            height: 150px
+            overflow: hidden
+            img
+                width: 150%
+                margin-left: -20px
+        .media-body
+            padding-left: 10px
+            text-align: left
+            h6 
+                font-weight: 900
+            p 
+                font-size: 13px
+                padding-top: 9px
+                &::before
+                    padding-top: 9px
+                    display: block
+                    content: ''
+                    width: 25px
+                    border-top: 2px gray solid
+
+.partners
+    color: white
+    background-color: $cgy3
+    padding-top: 25px
+    h3 
+        text-align: center
+    .partner-logos
+        +flexit($jc: space-around)
+        .fas
+            color: $clogo
+            font-size: 40px
+
+footer
+    background-color: $cfooter
+    .fas
+        font-size: 50px
+
+
+.border-red
+    height: 5px
+    width: 50px
+    border-top: 5px $crd solid
+    margin: 15px auto
+
+.bg-corange
+    background-color: $corange2
+    color: white
+
+.orange-text
+    color: $orange
+
+.fa-chevron-down
+    color: $orange

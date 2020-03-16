@@ -1,7 +1,12 @@
-@import url(d:\kubi9\Desktop\Microverse Projects\8 Capstone\HTML-CSS-capstone-project-Conference-page\stylesheets\sanitize.css);
-@import url(d:\kubi9\Desktop\Microverse Projects\8 Capstone\HTML-CSS-capstone-project-Conference-page\stylesheets\mediaqueries.css);
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900&display=swap");
+main {
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  color: #2e2e2e;
+  min-width: 320px;
+}
+
 ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28,9 +33,11 @@ a {
 a:hover {
   font-weight: 900;
   color: #ec5242;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-header {
+header .d-md-block {
   background: #272a31;
   color: white;
   font-size: 25px;
@@ -49,6 +56,12 @@ header a {
   color: white;
 }
 
+header .d-md-none .fa-bars {
+  color: #272a31;
+  margin: 15px 0 0 20px;
+  font-size: 30px;
+}
+
 .bgimg {
   background-image: url(https://www.elegantthemes.com/blog/wp-content/uploads/2013/09/bg-3-full.jpg);
   position: absolute;
@@ -57,6 +70,213 @@ header a {
   right: 0;
   bottom: 0;
   z-index: -1;
-  opacity: 0.4;
+  opacity: 0.8;
+}
+
+.welcome {
+  margin: 3rem auto 0 auto;
+  width: 90%;
+}
+
+.welcome h4 {
+  color: #ec5242;
+}
+
+.welcome h1 {
+  font-size: 50px;
+  background: -webkit-gradient(linear, left bottom, right top, from(#ec5242), color-stop(#a70003), color-stop(#ec5242), color-stop(#a70003), color-stop(#ec5242), color-stop(#ec5242), to(white));
+  background: linear-gradient(to right top, #ec5242, #a70003, #ec5242, #a70003, #ec5242, #ec5242, white);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+
+.welcome .summary-event {
+  background-color: #f7f7f7;
+  padding: 15px;
+  border: 2px white solid;
+  border-radius: 3px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+}
+
+.main-program {
+  background-color: #272a33;
+  padding-bottom: 25px;
+  color: white;
+}
+
+.main-program h1 {
+  text-align: center;
+  padding-top: 35px;
+}
+
+.main-program .nested-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .main-program .nested-section {
+    display: block;
+    width: 100%;
+  }
+}
+
+.main-program article {
+  background-color: #ffffff1a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin: 0 5px;
+}
+
+.main-program article .fa-user-friends {
+  font-size: 55px;
+}
+
+.main-program article h3 {
+  color: #dd4a3f;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .main-program article {
+    height: 100px;
+    width: 95%;
+    margin: 15px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-program article h3 {
+    font-size: 18px;
+  }
+  .main-program article p {
+    width: 50%;
+    text-align: left;
+    padding-top: 3px;
+    font-size: 10px;
+    padding-left: 5px;
+  }
+  .main-program article .fa-user-friends {
+    font-size: 40px;
+  }
+}
+
+.featured-speakers {
+  text-align: center;
+}
+
+.featured-speakers h1 {
+  padding-top: 10px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.featured-speakers .media {
+  padding: 10px;
+}
+
+.featured-speakers .media a {
+  width: 100px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.featured-speakers .media a img {
+  width: 150%;
+  margin-left: -20px;
+}
+
+.featured-speakers .media .media-body {
+  padding-left: 10px;
+  text-align: left;
+}
+
+.featured-speakers .media .media-body h6 {
+  font-weight: 900;
+}
+
+.featured-speakers .media .media-body p {
+  font-size: 13px;
+  padding-top: 9px;
+}
+
+.featured-speakers .media .media-body p::before {
+  padding-top: 9px;
+  display: block;
+  content: '';
+  width: 25px;
+  border-top: 2px gray solid;
+}
+
+.partners {
+  color: white;
+  background-color: #414246;
+  padding-top: 25px;
+}
+
+.partners h3 {
+  text-align: center;
+}
+
+.partners .partner-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.partners .partner-logos .fas {
+  color: #b1b1b1;
+  font-size: 40px;
+}
+
+footer {
+  background-color: #f2f2f2;
+}
+
+footer .fas {
+  font-size: 50px;
+}
+
+.border-red {
+  height: 5px;
+  width: 50px;
+  border-top: 5px #ec5242 solid;
+  margin: 15px auto;
+}
+
+.bg-corange {
+  background-color: #ff4f38;
+  color: white;
+}
+
+.orange-text {
+  color: #dd4a3f;
+}
+
+.fa-chevron-down {
+  color: #dd4a3f;
 }
 /*# sourceMappingURL=main.css.map */
