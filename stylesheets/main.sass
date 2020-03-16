@@ -15,16 +15,29 @@ $cgy: #d3d3d3
     font-family: 'Montserrat', sans-serif
     font-weight: $boldness
 
-li
-    list-style: none
+=flexit()
+    display: flex
+    justify-content: center
+    align-items: center
+
+ul 
+    +flexit()
+    justify-content: space-around
+    li
+        list-style: none
+        padding-right: 10px 
 
 a
     text-decoration: none
-    
+    &:hover
+        font-weight: 900
+        color: $crd
 
 header
     background: $cbl
     color: white
     font-size: 25px
+    +flexit()
     a
         color: white
+

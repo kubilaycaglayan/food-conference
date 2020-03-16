@@ -2,18 +2,47 @@
 @import url(d:\kubi9\Desktop\Microverse Projects\8 Capstone\HTML-CSS-capstone-project-Conference-page\stylesheets\mediaqueries.css);
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900&display=swap");
-li {
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+ul li {
   list-style: none;
+  padding-right: 10px;
 }
 
 a {
   text-decoration: none;
 }
 
+a:hover {
+  font-weight: 900;
+  color: #ec5242;
+}
+
 header {
   background: #272a31;
   color: white;
   font-size: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header a {
