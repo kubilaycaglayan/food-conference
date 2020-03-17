@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900&display=swap");
-* {
-  border: 0.5px red solid;
-}
-
 main {
   font-family: 'Lato', sans-serif;
   font-weight: normal;
@@ -126,6 +122,12 @@ header .d-md-none .fa-bars {
     padding-left: 8%;
     padding-right: 8%;
     width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome {
+    margin-top: 75px;
   }
 }
 

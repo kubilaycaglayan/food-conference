@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900&display=swap");
-* {
-  border: 0.5px red solid;
-}
-
 main {
   font-family: 'Lato', sans-serif;
   font-weight: normal;
@@ -126,6 +122,12 @@ header .d-md-none .fa-bars {
     padding-left: 8%;
     padding-right: 8%;
     width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome {
+    margin-top: 75px;
   }
 }
 
@@ -485,5 +487,73 @@ footer p {
 
 .dropdown-toggle::after {
   visibility: hidden;
+}
+
+.welcome {
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 25px;
+  margin-top: 0;
+  width: 100%;
+  background: #f7f7f7;
+}
+
+.welcome .summary-event p {
+  margin-top: 0;
+  margin-bottom: 0;
+  background: white;
+}
+
+@media (max-width: 768px) {
+  .welcome {
+    margin-top: 55px;
+  }
+}
+
+.conference-logo {
+  padding-top: 25px;
+}
+
+.conference-logo i {
+  color: #ec5242;
+  font-size: 150px;
+}
+
+@media (max-width: 768px) {
+  .conference-logo i {
+    font-size: 100px;
+  }
+}
+
+.past-summits a {
+  display: block;
+  position: relative;
+  max-width: 370px;
+  height: 90%;
+  overflow: hidden;
+}
+
+.past-summits a .over-lay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+  background: #ec53429d;
+  color: white;
+  padding: 25px;
+  padding-top: 80px;
+}
+
+.past-summits a .over-lay:hover {
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.past-summits a img {
+  position: relative;
+  width: 100%;
+  z-index: 2;
 }
 /*# sourceMappingURL=about.css.map */
