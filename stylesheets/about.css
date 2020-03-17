@@ -1,10 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900&display=swap");
+header {
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+}
+
 main {
   font-family: 'Lato', sans-serif;
   font-weight: normal;
   color: #2e2e2e;
   min-width: 320px;
+}
+
+footer {
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
 }
 
 ul {
@@ -530,6 +540,11 @@ footer p {
   padding-top: 25px;
 }
 
+.conference-logo h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
 .conference-logo i {
   color: #ec5242;
   font-size: 150px;
@@ -539,6 +554,12 @@ footer p {
   .conference-logo i {
     font-size: 100px;
   }
+}
+
+.past-summits h3 {
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
 }
 
 .past-summits a {
@@ -564,7 +585,7 @@ footer p {
 
 .past-summits a .over-lay:hover {
   font-weight: 500;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 .past-summits a img {

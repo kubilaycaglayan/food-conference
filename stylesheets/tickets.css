@@ -1,10 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900&display=swap");
+header {
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+}
+
 main {
   font-family: 'Lato', sans-serif;
   font-weight: normal;
   color: #2e2e2e;
   min-width: 320px;
+}
+
+footer {
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
 }
 
 ul {
@@ -521,6 +531,8 @@ footer p {
 
 .s1 h2 {
   margin-top: 55px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
 }
 
 .s1 .border-red {
@@ -571,6 +583,11 @@ footer p {
   padding-top: 70px;
   padding-right: 10px;
   padding-left: 10px;
+}
+
+.s2 h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
 }
 
 @media (min-width: 768px) {
