@@ -1,19 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900&display=swap");
+
 header {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: normal;
 }
 
 main {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: normal;
   color: #2e2e2e;
   min-width: 320px;
 }
 
 footer {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: normal;
 }
 
@@ -22,13 +23,11 @@ ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 ul li {
@@ -111,8 +110,8 @@ header .d-md-none i {
 
 .white-bar ul {
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .white-bar i {
@@ -170,8 +169,9 @@ header .d-md-none i {
   font-size: 70px;
   background-image: url(https://cdn.pixabay.com/photo/2014/06/22/05/49/rose-374318_1280.jpg);
   -webkit-text-fill-color: transparent;
+  background-clip: text;
   -webkit-background-clip: text;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 900;
 }
 
@@ -186,7 +186,7 @@ header .d-md-none i {
 }
 
 .welcome .summary-event p {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 500;
   padding: 15px;
   position: relative;
@@ -231,8 +231,24 @@ header .d-md-none i {
 }
 
 .main-program {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#353638), color-stop(30%, #414246), color-stop(70%, #414246), color-stop(#353638), to(#414246));
-  background-image: linear-gradient(to top, #353638, #414246 30%, #414246 70%, #353638, #414246);
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#353638),
+    color-stop(30%, #414246),
+    color-stop(70%, #414246),
+    color-stop(#353638),
+    to(#414246)
+  );
+  background-image: linear-gradient(
+    to top,
+    #353638,
+    #414246 30%,
+    #414246 70%,
+    #353638,
+    #414246
+  );
   background-size: 50px 50px;
   width: 100%;
   padding-bottom: 25px;
@@ -256,11 +272,11 @@ header .d-md-none i {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
@@ -319,10 +335,10 @@ header .d-md-none i {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .main-program article h3 {
     font-size: 18px;
@@ -416,7 +432,7 @@ header .d-md-none i {
 .featured-speakers .media .media-body p::before {
   padding-top: 9px;
   display: block;
-  content: '';
+  content: "";
   width: 25px;
   border-top: 2px gray solid;
 }
@@ -439,10 +455,10 @@ header .d-md-none i {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .partners .partner-logos .fas {
@@ -472,12 +488,15 @@ footer p {
     padding-left: 25px;
     padding-right: 25px;
   }
+
   footer .fas {
     font-size: 30px;
   }
+
   footer h4 {
     font-size: 20px;
   }
+
   footer p {
     margin-left: 5px;
   }
