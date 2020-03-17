@@ -49,11 +49,11 @@
       </ul>
     </div>
 
-    <section class="s1 text-center">
+    <section class="s1 text-center p-2">
       <h2>Select Tickets</h2>
       <div class="border-red"></div>
       <div class="steps">
-        <h3>STEP 1 <p>Please select the day when you want to join Food Conference 2020</p></h3>
+        <h3><span class="orange-text"><i class="fas fa-circle"></i> STEP 1 </span><span class="pl-2 d-block d-md-inline"> Please select the day when you want to join Food Conference 2020</span></h3>
       </div>
 
       <table class="table table-bordered">
@@ -75,14 +75,15 @@
           </tr>
           <tr>
             <th scope="row">Normal</th>
-            <td><input type="radio" name="ticket-type" value=""></td>
-            <td>Thornton</td>
-            <td>@fat</td>
+            <td><label class="orange-text font-weight-bold" for="first">15.00</label><br class=""><input type="radio" name="ticket-type" id="first" value=""></td>
+            <td><label class="orange-text font-weight-bold" for="second">25.00</label><br class=""><input type="radio" name="ticket-type" id="second" value=""></td>
+            <td><label class="orange-text font-weight-bold" for="third">5.00</label><br class=""><input type="radio" name="ticket-type" id="third" value=""></td>
           </tr>
           <tr>
             <th scope="row">Students</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
+            <td><label class="orange-text font-weight-bold" for="fourth">10.00</label><br class=""><input type="radio" name="ticket-type" id="fourth" value=""></td>
+            <td><label class="orange-text font-weight-bold" for="fifth">20.00</label><br class=""><input type="radio" name="ticket-type" id="fifth" value=""></td>
+            <td><label class="orange-text font-weight-bold" for="sixth">5.00</label><br class=""><input type="radio" name="ticket-type" id="sixth" value=""></td>
           </tr>
         </tbody>
       </form>

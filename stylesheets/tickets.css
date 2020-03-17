@@ -488,4 +488,57 @@ footer p {
 .dropdown-toggle::after {
   visibility: hidden;
 }
+
+.s1 {
+  background-color: #f7f7f7;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+}
+
+.s1 h2 {
+  margin-top: 55px;
+}
+
+.s1 .border-red {
+  margin-top: 25px;
+  padding-bottom: 25px;
+}
+
+.s1 .steps {
+  border: 1px gray solid;
+  border-radius: 11px;
+  margin: 0 auto 25px auto;
+  display: inline-block;
+  padding: 15px 25px 15px 25px;
+}
+
+.s1 .steps h3 {
+  font-size: 18px;
+}
+
+.s1 .steps .orange-text i {
+  font-size: 15px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .s1 .steps {
+    width: 90%;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+
+.s1 .table {
+  border: 5px solid;
+  border-image-source: url(http://getwallpapers.com/wallpaper/full/e/4/c/730556-texture-wallpapers-1920x1080-for-meizu.jpg);
+  border-image-slice: 100 100;
+  border-image-repeat: repeat;
+}
+
+@media (max-width: 768px) {
+  .s1 .table {
+    font-size: 10px;
+  }
+}
 /*# sourceMappingURL=tickets.css.map */
