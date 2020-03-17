@@ -16,6 +16,8 @@ main {
 footer {
   font-family: "Lato", sans-serif;
   font-weight: normal;
+  background-color: #f2f2f2;
+  padding-left: 50px;
 }
 
 ul {
@@ -23,8 +25,6 @@ ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -57,6 +57,12 @@ header .gray-bar {
   margin-left: auto;
 }
 
+.white-bar ul {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
 header .gray-bar ul {
   margin-left: auto;
 }
@@ -71,6 +77,19 @@ header li:hover {
   cursor: pointer;
 }
 
+.white-bar i {
+  font-size: 65px;
+  color: #ec5242;
+}
+
+footer h4 {
+  font-weight: 700;
+}
+
+.welcome h4 {
+  color: #ec5242;
+}
+
 header .d-md-none {
   background: #f7f7f7c7;
 }
@@ -79,6 +98,10 @@ header .d-md-none .fa-bars {
   color: #ec5242;
   margin: 15px 0 0 20px;
   font-size: 30px;
+}
+
+.white-bar h4 {
+  color: #ec5242;
 }
 
 header .d-md-none h4 {
@@ -108,21 +131,6 @@ header .d-md-none i {
   font-size: 25px;
   padding-left: 8%;
   padding-right: 8%;
-}
-
-.white-bar ul {
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.white-bar i {
-  font-size: 65px;
-  color: #ec5242;
-}
-
-.white-bar h4 {
-  color: #ec5242;
 }
 
 .white-bar a {
@@ -155,10 +163,6 @@ header .d-md-none i {
   }
 }
 
-.welcome h4 {
-  color: #ec5242;
-}
-
 @media (min-width: 768px) {
   .welcome h4 {
     font-size: 40px;
@@ -171,6 +175,7 @@ header .d-md-none i {
   font-size: 70px;
   background-image: url(https://cdn.pixabay.com/photo/2014/06/22/05/49/rose-374318_1280.jpg);
   -webkit-text-fill-color: transparent;
+  background-clip: text;
   -webkit-background-clip: text;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
@@ -180,6 +185,10 @@ header .d-md-none i {
   .welcome h2 {
     font-size: 30px;
   }
+}
+
+footer p {
+  margin-left: 25px;
 }
 
 .welcome .summary-event {
@@ -232,20 +241,26 @@ header .d-md-none i {
 }
 
 .main-program {
-  background-image: -webkit-gradient(linear,
+  background-image:
+    -webkit-gradient(
+      linear,
       left bottom,
       left top,
       from(#353638),
       color-stop(30%, #414246),
       color-stop(70%, #414246),
       color-stop(#353638),
-      to(#414246));
-  background-image: linear-gradient(to top,
+      to(#414246)
+    );
+  background-image:
+    linear-gradient(
+      to top,
       #353638,
       #414246 30%,
       #414246 70%,
       #353638,
-      #414246);
+      #414246
+    );
   background-size: 50px 50px;
   width: 100%;
   padding-bottom: 25px;
@@ -306,9 +321,17 @@ header .d-md-none i {
   top: -2px;
 }
 
+footer .fas {
+  font-size: 70px;
+}
+
 .main-program article .fas {
   font-size: 55px;
   margin-bottom: 5px;
+}
+
+.partners h3 {
+  text-align: center;
 }
 
 .main-program article h3 {
@@ -444,10 +467,6 @@ header .d-md-none i {
   padding-bottom: 25px;
 }
 
-.partners h3 {
-  text-align: center;
-}
-
 .partners .partner-logos {
   margin: 0 auto;
   width: 80%;
@@ -464,23 +483,6 @@ header .d-md-none i {
 .partners .partner-logos .fas {
   color: #b1b1b1;
   font-size: 40px;
-}
-
-footer {
-  background-color: #f2f2f2;
-  padding-left: 50px;
-}
-
-footer .fas {
-  font-size: 70px;
-}
-
-footer h4 {
-  font-weight: 700;
-}
-
-footer p {
-  margin-left: 25px;
 }
 
 @media (max-width: 768px) {
@@ -680,5 +682,3 @@ footer p {
   font-weight: 700;
   margin: 30px auto 50px auto;
 }
-
-/*# sourceMappingURL=tickets.css.map */

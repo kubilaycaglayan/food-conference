@@ -75,6 +75,23 @@ header li:hover {
   cursor: pointer;
 }
 
+footer h4 {
+  font-weight: 700;
+}
+
+.white-bar h4 {
+  color: #ec5242;
+}
+
+.welcome h4 {
+  color: #ec5242;
+}
+
+.conference-logo i {
+  color: #ec5242;
+  font-size: 150px;
+}
+
 header .d-md-none {
   background: #f7f7f7c7;
 }
@@ -114,12 +131,16 @@ header .d-md-none i {
   padding-right: 8%;
 }
 
-.white-bar h4 {
-  color: #ec5242;
-}
-
 .white-bar a {
   color: #414246;
+}
+
+.past-summits a {
+  display: block;
+  position: relative;
+  max-width: 370px;
+  height: 90%;
+  overflow: hidden;
 }
 
 .white-bar a:hover {
@@ -141,10 +162,6 @@ header .d-md-none i {
   .welcome {
     margin-top: 75px;
   }
-}
-
-.welcome h4 {
-  color: #ec5242;
 }
 
 @media (min-width: 768px) {
@@ -169,6 +186,10 @@ header .d-md-none i {
   .welcome h2 {
     font-size: 30px;
   }
+}
+
+footer p {
+  margin-left: 25px;
 }
 
 .welcome .summary-event {
@@ -267,6 +288,21 @@ header .d-md-none i {
   }
 }
 
+footer .fas {
+  font-size: 70px;
+}
+
+.conference-logo h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.past-summits h3 {
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
 .main-program article {
   width: 19%;
   height: 250px;
@@ -293,6 +329,10 @@ header .d-md-none i {
 .main-program article .fas {
   font-size: 55px;
   margin-bottom: 5px;
+}
+
+.partners h3 {
+  text-align: center;
 }
 
 .main-program article h3 {
@@ -337,6 +377,25 @@ header .d-md-none i {
   .main-program article .fas {
     font-size: 40px;
   }
+}
+
+.welcome .summary-event p {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  padding: 15px;
+  position: relative;
+  border: 5px white solid;
+  border-radius: 3px;
+  z-index: 3;
+  margin-top: 0;
+  margin-bottom: 0;
+  background: white;
+}
+
+.past-summits a img {
+  position: relative;
+  width: 100%;
+  z-index: 2;
 }
 
 .featured-speakers {
@@ -428,10 +487,6 @@ header .d-md-none i {
   padding-bottom: 25px;
 }
 
-.partners h3 {
-  text-align: center;
-}
-
 .partners .partner-logos {
   margin: 0 auto;
   width: 80%;
@@ -455,18 +510,6 @@ footer {
   font-weight: normal;
   background-color: #f2f2f2;
   padding-left: 50px;
-}
-
-footer .fas {
-  font-size: 70px;
-}
-
-footer h4 {
-  font-weight: 700;
-}
-
-footer p {
-  margin-left: 25px;
 }
 
 @media (max-width: 768px) {
@@ -529,19 +572,6 @@ footer p {
   background: #f7f7f7;
 }
 
-.welcome .summary-event p {
-  font-family: "Lato", sans-serif;
-  font-weight: 500;
-  padding: 15px;
-  position: relative;
-  border: 5px white solid;
-  border-radius: 3px;
-  z-index: 3;
-  margin-top: 0;
-  margin-bottom: 0;
-  background: white;
-}
-
 @media (max-width: 768px) {
   .welcome {
     margin-top: 55px;
@@ -552,34 +582,10 @@ footer p {
   padding-top: 25px;
 }
 
-.conference-logo h3 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-}
-
-.conference-logo i {
-  color: #ec5242;
-  font-size: 150px;
-}
-
 @media (max-width: 768px) {
   .conference-logo i {
     font-size: 100px;
   }
-}
-
-.past-summits h3 {
-  font-size: 25px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-}
-
-.past-summits a {
-  display: block;
-  position: relative;
-  max-width: 370px;
-  height: 90%;
-  overflow: hidden;
 }
 
 .past-summits a .over-lay {
@@ -598,12 +604,6 @@ footer p {
 .past-summits a .over-lay:hover {
   font-weight: 500;
   opacity: 0.4;
-}
-
-.past-summits a img {
-  position: relative;
-  width: 100%;
-  z-index: 2;
 }
 
 /*# sourceMappingURL=about.css.map */
