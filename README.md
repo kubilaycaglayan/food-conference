@@ -4,7 +4,7 @@
 
 > Creating https://www.behance.net/gallery/29845175/CC-Global-Summit-2015 website according to the specs.
 
-
+![capstone-html](https://user-images.githubusercontent.com/60448833/76857618-df44c380-6866-11ea-88c9-802b5f23f509.gif)
 
 
 Additional description about the project and its features.
@@ -17,7 +17,8 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link]( )
+[Live Demo Link](https://rawcdn.githack.com/kblycaglayan/HTML-CSS-capstone-project-Conference-page/65c0b4f71f46e41a66cc9ae49396506723a5d562/index.html)
+[Video Presentation](https://www.loom.com/share/58722e33790e41c18a7e61f090bb29f1)
 
 ### Prerequisites
 
@@ -41,7 +42,7 @@ A browser (preferably Chrome)
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page]()
+Feel free to check the [issues page](https://github.com/kblycaglayan/HTML-CSS-capstone-project-Conference-page/issues)
 
 Start by:
 
