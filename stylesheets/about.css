@@ -60,21 +60,34 @@ header li:hover {
   cursor: pointer;
 }
 
+header .d-md-none {
+  background: #f7f7f7c7;
+}
+
 header .d-md-none .fa-bars {
-  color: #272a31;
+  color: #ec5242;
   margin: 15px 0 0 20px;
   font-size: 30px;
+}
+
+header .d-md-none h4 {
+  font-size: 15px;
+  color: #ec5242;
+}
+
+header .d-md-none i {
+  color: #ec5242;
 }
 
 .bgimg {
   background-image: url(https://images7.alphacoders.com/403/403245.jpg);
   background-size: cover;
-  width: 100%;
   position: absolute;
+  background-repeat: repeat-y;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: -330px;
   z-index: -1;
   opacity: 0.1;
 }
@@ -448,6 +461,9 @@ footer p {
   footer {
     padding-left: 25px;
     padding-right: 25px;
+  }
+  footer .fas {
+    font-size: 30px;
   }
   footer h4 {
     font-size: 20px;

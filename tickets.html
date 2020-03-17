@@ -27,13 +27,17 @@
     </div>
     
     </nav>
-    <nav class="d-md-none dropdown fixed-top">
+    <nav class="d-flex align-items-center d-md-none dropdown fixed-top">
       <a class="dropdown-toggle" data-toggle="dropdown" href="#" ><i class="fas fa-bars "></i></a>
     <div class="dropdown-menu">
       <a class="dropdown-item text-center" href="index.html">Home</a>
       <a class="dropdown-item text-center" href="tickets.html">Tickets</a>
       <a class="dropdown-item text-center" href="about.html">About</a>
     </div>
+    <div class="d-flex justify-content-center align-items-center ml-auto mr-3 pt-3">
+      <h4 class="p-3 pr-0 font-weight-bold">2020</h4>
+      <i class="fas fa-egg pb-2 pl-0"></i>
+      </div>
     </nav>
   </header>
   <main>
@@ -49,15 +53,15 @@
       </ul>
     </div>
 
-    <section class="s1 text-center p-2">
+    <section class="s1 text-center">
       <h2>Select Tickets</h2>
       <div class="border-red"></div>
       <div class="steps">
         <h3><span class="orange-text"><i class="fas fa-circle"></i> STEP 1 </span><span class="pl-2 d-block d-md-inline"> Please select the day when you want to join Food Conference 2020</span></h3>
       </div>
 
+      <form action="#">
       <table class="table table-bordered">
-        <form action="">
         <thead>
           <tr>
             <th scope="col">Ticket</th>
@@ -86,11 +90,59 @@
             <td><label class="orange-text font-weight-bold" for="sixth">5.00</label><br class=""><input type="radio" name="ticket-type" id="sixth" value=""></td>
           </tr>
         </tbody>
-      </form>
       </table>
+    </form>
     </section>
 
-    <section class="s2"></section>
+    <section class="s2 text-center">
+      <div class="square"><i class="fas fa-angle-down"></i></div>
+      <h2>Select Your Lunch</h2>
+      <div class="border-red"></div>
+      <div class="steps">
+        <h3><span class="orange-text"><i class="fas fa-circle"></i> STEP 2 </span><span class="pl-2 d-block d-md-inline"> Please select lunch for the registered day. There will be no more costs for the lunch.</span></h3>
+      </div>
+      <form action="#">
+      <table class="table table-bordered">
+
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Fish & Potato</th>
+            <th scope="col">Meat & Soup</th>
+            <th scope="col">Vegan</th>
+          </tr>
+        </thead>
+        
+        <tbody>
+          <tr>
+            <th scope="row">16.03.2020</th>
+            <td><label class="orange-text font-weight-bold" for="afirstm">MENU-1</label><br class=""><input type="radio" name="meal-type" id="afirstm" value=""></td>
+            <td><label class="orange-text font-weight-bold" for="asecondm">MENU-2</label><br class=""><input type="radio" name="meal-type" id="asecondm" value=""></td>
+            <td><label class="orange-text font-weight-bold" for="athirdm">MENU-3</label><br class=""><input type="radio" name="meal-type" id="athirdm" value=""></td>
+          </tr>
+        
+          
+          <tr>
+            <th scope="row">17.03.2020</th>
+            <td><label class="orange-text font-weight-bold" for="firstm">MENU-1</label><br class=""><input type="radio" name="meal-type2" id="firstm" value=""></td>
+            <td><label class="orange-text font-weight-bold" for="secondm">MENU-2</label><br class=""><input type="radio" name="meal-type2" id="secondm" value=""></td>
+            <td><label class="orange-text font-weight-bold" for="thirdm">MENU-3</label><br class=""><input type="radio" name="meal-type2" id="thirdm" value=""></td>
+          </tr>
+     
+          <tr>
+            <th scope="row">18.03.2020</th>
+            <td><label class="orange-text font-weight-bold" for="fourthm">MENU-1</label><br class=""><input type="radio" name="diner-type" id="fourthm" value=""></td>
+            <td><label class="orange-text font-weight-bold" for="fifthm">MENU-2</label><br class=""><input type="radio" name="diner-type" id="fifthm" value=""></td>
+            <td><label class="orange-text font-weight-bold" for="sixthm">MENU-3</label><br class=""><input type="radio" name="diner-type" id="sixthm" value=""></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+
+      <div class="btn">Submit Form</div>
+    </section>
+    
+    
 
   </main>
   <footer class="d-flex justify-content-center align-items-center py-5">

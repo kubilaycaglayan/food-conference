@@ -60,21 +60,34 @@ header li:hover {
   cursor: pointer;
 }
 
+header .d-md-none {
+  background: #f7f7f7c7;
+}
+
 header .d-md-none .fa-bars {
-  color: #272a31;
+  color: #ec5242;
   margin: 15px 0 0 20px;
   font-size: 30px;
+}
+
+header .d-md-none h4 {
+  font-size: 15px;
+  color: #ec5242;
+}
+
+header .d-md-none i {
+  color: #ec5242;
 }
 
 .bgimg {
   background-image: url(https://images7.alphacoders.com/403/403245.jpg);
   background-size: cover;
-  width: 100%;
   position: absolute;
+  background-repeat: repeat-y;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: -330px;
   z-index: -1;
   opacity: 0.1;
 }
@@ -449,6 +462,9 @@ footer p {
     padding-left: 25px;
     padding-right: 25px;
   }
+  footer .fas {
+    font-size: 30px;
+  }
   footer h4 {
     font-size: 20px;
   }
@@ -491,8 +507,16 @@ footer p {
 
 .s1 {
   background-color: #f7f7f7;
+  padding: 30px 10px 100px 10px;
   font-family: 'Montserrat', sans-serif;
   font-weight: normal;
+}
+
+@media (min-width: 768px) {
+  .s1 {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
 }
 
 .s1 h2 {
@@ -530,15 +554,94 @@ footer p {
 }
 
 .s1 .table {
-  border: 5px solid;
-  border-image-source: url(http://getwallpapers.com/wallpaper/full/e/4/c/730556-texture-wallpapers-1920x1080-for-meizu.jpg);
-  border-image-slice: 100 100;
-  border-image-repeat: repeat;
+  position: relative;
+  border: 5px red dashed;
 }
 
 @media (max-width: 768px) {
   .s1 .table {
     font-size: 10px;
   }
+}
+
+.s2 {
+  background-color: white;
+  text-align: center;
+  position: relative;
+  padding-top: 70px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+@media (min-width: 768px) {
+  .s2 {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+}
+
+.s2 .square {
+  margin-left: 40%;
+  position: absolute;
+  top: -25px;
+  width: 50px;
+  height: 50px;
+  background-color: #ff4f38;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.s2 .square .fa-angle-down {
+  color: white;
+  font-size: 35px;
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+  position: relative;
+  left: 3px;
+  top: 10px;
+}
+
+.s2 .steps {
+  border: 1px gray solid;
+  border-radius: 11px;
+  margin: 0 auto 25px auto;
+  display: inline-block;
+  padding: 15px 25px 15px 25px;
+}
+
+.s2 .steps h3 {
+  font-size: 18px;
+}
+
+.s2 .steps .orange-text i {
+  font-size: 15px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .s2 .steps {
+    width: 90%;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+
+.s2 .table {
+  position: relative;
+  border: 5px blue dashed;
+}
+
+@media (max-width: 768px) {
+  .s2 .table {
+    font-size: 10px;
+  }
+}
+
+.s2 .btn {
+  background: #ff4f38;
+  color: white;
+  padding: 10px 30px 10px 30px;
+  font-weight: 700;
+  margin: 30px auto 50px auto;
 }
 /*# sourceMappingURL=tickets.css.map */
