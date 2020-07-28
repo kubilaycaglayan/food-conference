@@ -1,6 +1,6 @@
 [![hire-badge](https://img.shields.io/badge/Consult%20/%20Hire%20Kubilay-Click%20to%20Contact-brightgreen)](mailto:kblycaglayan@gmail.com) [![Twitter Follow](https://img.shields.io/twitter/follow/kbcaglayan?label=Follow%20Kubilay%20on%20Twitter&style=social)](https://twitter.com/kbcaglayan)
 
-# HTML-CSS-capstone-project-Conference-page
+# Food Conference
 
 > Creating https://www.behance.net/gallery/29845175/CC-Global-Summit-2015 website according to the specs.
 
